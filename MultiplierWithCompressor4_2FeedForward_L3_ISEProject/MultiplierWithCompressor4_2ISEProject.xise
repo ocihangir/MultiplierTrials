@@ -12,50 +12,36 @@
     <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
   </header>
 
-  <version xil_pn:ise_version="14.6" xil_pn:schema_version="2"/>
+  <version xil_pn:ise_version="14.7" xil_pn:schema_version="2"/>
 
   <files>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/gpc_modules_lut6_used.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="gpc_modules_lut6_used.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="2"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="2"/>
     </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/level0_akak_lut6.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="level0_akak_lut6.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
     </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/mult_32x64_lut6_akak.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="mult_32x64_lut6_akak.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="3"/>
     </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/multiplier_mxn_wrapper.v" xil_pn:type="FILE_VERILOG">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/TBUnitMultiplier.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/UnitMult.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="6"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/UnitMultiplierWrapper.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
-    </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/MultiplierWithCompressor4_2.srcs/sources_1/new/4to2Compressor.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="4to2Compressor.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="4"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="4"/>
     </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/MultiplierWithCompressor4_2.srcs/sources_1/new/MultiplierWithCompressor.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="MultiplierWithCompressor.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="5"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="5"/>
     </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/MultiplierWithCompressor4_2.srcs/sim_1/new/TBMultiplier.vhd" xil_pn:type="FILE_VHDL">
+    <file xil_pn:name="TBMultiplier.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="8"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="10"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="10"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="10"/>
     </file>
-    <file xil_pn:name="../MultiplierWithCompressor4_2/largemultiplierwrapper.v" xil_pn:type="FILE_VERILOG">
+    <file xil_pn:name="largemultiplierwrapper.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="7"/>
       <association xil_pn:name="Implementation" xil_pn:seqID="6"/>
     </file>
@@ -186,8 +172,8 @@
     <property xil_pn:name="Ignore User Timing Constraints Map" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Ignore User Timing Constraints Par" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Implementation Top" xil_pn:value="Module|large_multiplier_wrapper" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top File" xil_pn:value="../MultiplierWithCompressor4_2/largemultiplierwrapper.v" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/TBMultiplier/multiplier_inst" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top File" xil_pn:value="largemultiplierwrapper.v" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Implementation Top Instance Path" xil_pn:value="/large_multiplier_wrapper" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Include 'uselib Directive in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Include SIMPRIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Include UNISIM Models in Verilog File" xil_pn:value="false" xil_pn:valueState="default"/>

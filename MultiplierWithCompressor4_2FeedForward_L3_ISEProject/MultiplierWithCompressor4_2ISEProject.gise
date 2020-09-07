@@ -24,10 +24,147 @@
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="MultiplierWithCompressor_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="UnitMultiplierWrapper_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="large_multiplier_wrapper.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="large_multiplier_wrapper.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="large_multiplier_wrapper.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="large_multiplier_wrapper.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="large_multiplier_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="large_multiplier_wrapper.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="large_multiplier_wrapper.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="large_multiplier_wrapper.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="large_multiplier_wrapper.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="large_multiplier_wrapper.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="large_multiplier_wrapper.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="large_multiplier_wrapper.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="large_multiplier_wrapper.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="large_multiplier_wrapper.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="large_multiplier_wrapper.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="large_multiplier_wrapper.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="large_multiplier_wrapper.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="large_multiplier_wrapper.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="large_multiplier_wrapper.xst"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="large_multiplier_wrapper_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="large_multiplier_wrapper_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="large_multiplier_wrapper_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="large_multiplier_wrapper_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="large_multiplier_wrapper_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_PSR" xil_pn:name="large_multiplier_wrapper_map.psr"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="large_multiplier_wrapper_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="large_multiplier_wrapper_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="large_multiplier_wrapper_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="large_multiplier_wrapper_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="large_multiplier_wrapper_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="large_multiplier_wrapper_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="large_multiplier_wrapper_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="large_multiplier_wrapper_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="large_multiplier_wrapper_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="multiplier_wrapper_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1599423733" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599423733" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8317235700496443576" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599423733" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6822853270739082195" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599423733" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599423733" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-2795995831231016344" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599423733" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-311711526559844302" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599423733" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-7936153486563748963" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599423755" xil_pn:in_ck="5585122341894837007" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-941192027607082964" xil_pn:start_ts="1599423733">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.lso"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.ngc"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.ngr"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.prj"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.stx"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.syr"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.xst"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1599428011" xil_pn:in_ck="-4179806556685330884" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3407328347628583149" xil_pn:start_ts="1599428011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1599428022" xil_pn:in_ck="6189219918509174099" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8440929450439470941" xil_pn:start_ts="1599428011">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.bld"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.ngd"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1599428116" xil_pn:in_ck="6189219918509174100" xil_pn:name="TRANEXT_map_virtex6" xil_pn:prop_ck="-2894103873656600381" xil_pn:start_ts="1599428022">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.pcf"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_map.map"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_map.mrp"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_map.ncd"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_map.ngm"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_map.psr"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_map.xrpt"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_summary.xml"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1599428185" xil_pn:in_ck="3301539521882375789" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2316155118283562022" xil_pn:start_ts="1599428116">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.ncd"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.pad"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.par"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.ptwx"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.unroutes"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.xpi"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_pad.csv"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_pad.txt"/>
+      <outfile xil_pn:name="large_multiplier_wrapper_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1599428185" xil_pn:in_ck="6189219918509173968" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1599428170">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.twr"/>
+      <outfile xil_pn:name="large_multiplier_wrapper.twx"/>
+    </transform>
+  </transforms>
 
 </generated_project>

@@ -1,0 +1,6 @@
+verilog work "level0_akak_lut6.v"
+verilog work "gpc_modules_lut6_used.v"
+verilog work "mult_32x64_lut6_akak.v"
+verilog work "4to2Compressor.v"
+verilog work "MultiplierWithCompressor4_2FB.v"
+verilog work "largemultiplierwrapper.v"

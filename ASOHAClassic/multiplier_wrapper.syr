@@ -1,0 +1,731 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: multiplier_wrapper.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplier_wrapper.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplier_wrapper"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-3-ff784
+
+---- Source Options
+Top Module Name                    : multiplier_wrapper
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\level0_akak_lut6.v" into library work
+Parsing module <level0_mult>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v" into library work
+Parsing module <gpc006>.
+Parsing module <gpc015>.
+Parsing module <gpc024>.
+Parsing module <gpc033>.
+Parsing module <gpc042>.
+Parsing module <gpc114>.
+Parsing module <gpc123>.
+Parsing module <gpc132>.
+Parsing module <gpc222>.
+Parsing module <gpc213>.
+Parsing module <gpc005>.
+Parsing module <gpc014>.
+Parsing module <gpc023>.
+Parsing module <gpc022>.
+Parsing module <gpc003>.
+Parsing module <gpc112>.
+Parsing module <gpc122>.
+Parsing module <gpc004>.
+Parsing module <gpc013>.
+Parsing module <gpc032>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\mult_64x64_lut6_akak.v" into library work
+Parsing module <mult_64x64_lut6_akak>.
+Analyzing Verilog file "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\multiplier_mxn_wrapper.v" into library work
+Parsing module <multiplier_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <multiplier_wrapper>.
+
+Elaborating module <mult_64x64_lut6_akak>.
+
+Elaborating module <level0_mult>.
+
+Elaborating module <LUT6(INIT=64'b1010000010100000101000001010000010100000101000001010000010100000)>.
+
+Elaborating module <LUT6(INIT=64'b0110101011000000011010101100000001101010110000000110101011000000)>.
+
+Elaborating module <LUT6(INIT=64'b1110011010101010010011000000000011100110101010100100110000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1110111001100110001010101010101001000100110011001000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b0100010001000100010011001100110010001000000000000000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1000100010001000100000000000000000000000000000000000000000000000)>.
+
+Elaborating module <gpc006>.
+
+Elaborating module <LUT6(INIT=64'b0110100110010110100101100110100110010110011010010110100110010110)>.
+
+Elaborating module <LUT6(INIT=64'b1000000100010111000101110111111000010111011111100111111011101000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111011101000111010001000000011101000100000001000000000000000)>.
+
+Elaborating module <gpc015>.
+
+Elaborating module <LUT6(INIT=64'b1001011001101001011010011001011010010110011010010110100110010110)>.
+
+Elaborating module <LUT6(INIT=64'b1110100010000001100000010001011100010111011111100111111011101000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111110111111101110100011101000100000001000000000000000)>.
+
+Elaborating module <gpc014>.
+
+Elaborating module <gpc114>.
+
+Elaborating module <LUT6(INIT=64'b0110100110010110011010011001011001101001100101100110100110010110)>.
+
+Elaborating module <LUT6(INIT=64'b1000000100010111011111101110100010000001000101110111111011101000)>.
+
+Elaborating module <LUT6(INIT=64'b0100010111011111111111111111111110111010001000000000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111011101000100000000000000000000000000000000000000000000000)>.
+WARNING:HDLCompiler:189 - "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v" Line 316: Size mismatch in connection of port <out>. Formal port size is 4-bit while actual signal size is 3-bit.
+
+Elaborating module <gpc003>.
+
+Elaborating module <gpc033>.
+
+Elaborating module <LUT6(INIT=64'b1001011010010110100101101001011010010110100101101001011010010110)>.
+
+Elaborating module <LUT6(INIT=64'b01011111101000111010000001011111101000000101110001011111101000)>.
+
+Elaborating module <LUT6(INIT=64'b01011111111111111111111110100011111111111010001110100000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1110100000000000000000000000000000000000000000000000000000000000)>.
+
+Elaborating module <gpc022>.
+
+Elaborating module <gpc222>.
+
+Elaborating module <LUT6(INIT=64'b0110011001100110011001100110011001100110011001100110011001100110)>.
+
+Elaborating module <LUT6(INIT=64'b1000011101111000100001110111100010000111011110001000011101111000)>.
+
+Elaborating module <LUT6(INIT=64'b1111100010000000000001110111111100000111011111111111100010000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111111111110001000000011111000100000000000000000000000)>.
+
+Elaborating module <gpc005>.
+
+Elaborating module <gpc023>.
+
+Elaborating module <gpc123>.
+
+Elaborating module <LUT6(INIT=64'b1110100000010111000101111110100011101000000101110001011111101000)>.
+
+Elaborating module <LUT6(INIT=64'b010111000101111111111111111111111010001110100000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111101000111010000000000000000000000000000000000000000000)>.
+
+Elaborating module <gpc132>.
+
+Elaborating module <LUT6(INIT=64'b0111100010000111100001110111100001111000100001111000011101111000)>.
+
+Elaborating module <LUT6(INIT=64'b1000000000000111000001110111111101111111111110001111100010000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111000111110001000000010000000000000000000000000000000)>.
+
+Elaborating module <gpc213>.
+
+Elaborating module <LUT6(INIT=64'b01011111101000000101111110100000010111111010000001011111101000)>.
+
+Elaborating module <LUT6(INIT=64'b1110100000000000000101111111111100010111111111111110100000000000)>.
+
+Elaborating module <LUT6(INIT=64'b1111111111111111111010000000000011101000000000000000000000000000)>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <multiplier_wrapper>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\multiplier_mxn_wrapper.v".
+        INPUT1_WIDTH = 64
+        INPUT2_WIDTH = 64
+        zero = 0
+        one = 1
+    Found 64-bit register for signal <in1_reg>.
+    Found 128-bit register for signal <outp>.
+    Found 64-bit register for signal <in0_reg>.
+    Summary:
+	inferred 256 D-type flip-flop(s).
+Unit <multiplier_wrapper> synthesized.
+
+Synthesizing Unit <mult_64x64_lut6_akak>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\mult_64x64_lut6_akak.v".
+    Found 116-bit adder for signal <n3082> created at line 3093.
+    Found 116-bit adder for signal <adderOut> created at line 3093.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <mult_64x64_lut6_akak> synthesized.
+
+Synthesizing Unit <level0_mult>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\level0_akak_lut6.v".
+    Summary:
+	no macro.
+Unit <level0_mult> synthesized.
+
+Synthesizing Unit <gpc006>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc006> synthesized.
+
+Synthesizing Unit <gpc015>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc015> synthesized.
+
+Synthesizing Unit <gpc014>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc014> synthesized.
+
+Synthesizing Unit <gpc114>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc114> synthesized.
+
+Synthesizing Unit <gpc003>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc003> synthesized.
+
+Synthesizing Unit <gpc033>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc033> synthesized.
+
+Synthesizing Unit <gpc022>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc022> synthesized.
+
+Synthesizing Unit <gpc222>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc222> synthesized.
+
+Synthesizing Unit <gpc005>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc005> synthesized.
+
+Synthesizing Unit <gpc023>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc023> synthesized.
+
+Synthesizing Unit <gpc123>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc123> synthesized.
+
+Synthesizing Unit <gpc132>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc132> synthesized.
+
+Synthesizing Unit <gpc213>.
+    Related source file is "C:\Users\HP\Desktop\Work\MultiplierTrials\ASOHAClassic\gpc_modules_lut6_used.v".
+    Summary:
+	no macro.
+Unit <gpc213> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 116-bit adder                                         : 2
+# Registers                                            : 3
+ 128-bit register                                      : 1
+ 64-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 115-bit adder                                         : 2
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <multiplier_wrapper> ...
+
+Optimizing unit <mult_64x64_lut6_akak> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiplier_wrapper, actual ratio is 16.
+FlipFlop in0_reg_36 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_36 connected to a primary input has been replicated
+FlipFlop in0_reg_37 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_37 connected to a primary input has been replicated
+FlipFlop in0_reg_38 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_38 connected to a primary input has been replicated
+FlipFlop in0_reg_39 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_39 connected to a primary input has been replicated
+FlipFlop in0_reg_4 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_4 connected to a primary input has been replicated
+FlipFlop in0_reg_5 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_5 connected to a primary input has been replicated
+FlipFlop in0_reg_6 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_6 connected to a primary input has been replicated
+FlipFlop in0_reg_7 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in0_reg_7 connected to a primary input has been replicated
+FlipFlop in1_reg_36 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in1_reg_36 connected to a primary input has been replicated
+FlipFlop in1_reg_37 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in1_reg_37 connected to a primary input has been replicated
+FlipFlop in1_reg_4 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in1_reg_4 connected to a primary input has been replicated
+FlipFlop in1_reg_5 has been replicated 1 time(s)
+INFO:Xst:1843 - HDL ADVISOR - FlipFlop in1_reg_5 connected to a primary input has been replicated
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 268
+ Flip-Flops                                            : 268
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : multiplier_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 6751
+#      GND                         : 1
+#      LUT2                        : 67
+#      LUT3                        : 103
+#      LUT4                        : 48
+#      LUT6                        : 6303
+#      MUXCY                       : 114
+#      XORCY                       : 115
+# FlipFlops/Latches                : 268
+#      FDR                         : 268
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 257
+#      IBUF                        : 129
+#      OBUF                        : 128
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff784-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             268  out of  93120     0%  
+ Number of Slice LUTs:                 6521  out of  46560    14%  
+    Number used as Logic:              6521  out of  46560    14%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6612
+   Number with an unused Flip Flop:    6344  out of   6612    95%  
+   Number with an unused LUT:            91  out of   6612     1%  
+   Number of fully used LUT-FF pairs:   177  out of   6612     2%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         258
+ Number of bonded IOBs:                 258  out of    360    71%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 268   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.147ns (Maximum Frequency: 139.921MHz)
+   Minimum input arrival time before clock: 0.745ns
+   Maximum output required time after clock: 0.562ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.147ns (frequency: 139.921MHz)
+  Total number of paths / destination ports: 316971798 / 128
+-------------------------------------------------------------------------
+Delay:               7.147ns (Levels of Logic = 122)
+  Source:            in0_reg_0 (FF)
+  Destination:       out_reg_127 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: in0_reg_0 to out_reg_127
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q            192   0.280   0.613  in0_reg_0 (in0_reg_0)
+     LUT6:I2->O            4   0.166   0.371  mult_lut6_akak_inst/lvl0_mult32/LUT6_1 (mult_lut6_akak_inst/pp32<1>)
+     LUT6:I4->O            4   0.290   0.371  mult_lut6_akak_inst/gpcL0_464/gpc114_inst/LUT6_2 (mult_lut6_akak_inst/gpcOutL0_464<2>)
+     LUT6:I4->O            4   0.290   0.371  mult_lut6_akak_inst/gpcL1_269/LUT6_3 (mult_lut6_akak_inst/gpcOutL1_269<3>)
+     LUT6:I4->O            4   0.290   0.371  mult_lut6_akak_inst/gpcL2_140/LUT6_3 (mult_lut6_akak_inst/gpcOutL2_140<3>)
+     LUT6:I4->O            4   0.290   0.495  mult_lut6_akak_inst/gpcL3_66/gpc123_inst/LUT6_2 (mult_lut6_akak_inst/gpcOutL3_66<2>)
+     LUT6:I2->O            2   0.166   0.300  mult_lut6_akak_inst/gpcL4_18/LUT6_3 (mult_lut6_akak_inst/gpcOutL4_18<3>)
+     LUT3:I2->O            1   0.053   0.296  mult_lut6_akak_inst/Madd_adderOut_Madd (mult_lut6_akak_inst/Madd_adderOut_Madd)
+     LUT3:I2->O            1   0.053   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_lut<0>1 (mult_lut6_akak_inst/Madd_adderOut_Madd_lut<0>1)
+     MUXCY:S->O            1   0.219   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_0 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>1)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_1 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>2)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_2 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>3)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_3 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>4)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_4 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>5)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_5 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>6)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_6 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>7)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_7 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>8)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_8 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>9)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_9 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>10)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_10 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>11)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_11 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>12)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_12 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>13)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_13 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>14)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_14 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>15)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_15 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>16)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_16 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>17)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_17 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>18)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_18 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>19)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_19 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>20)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_20 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>21)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_21 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>22)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_22 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>23)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_23 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>24)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_24 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>25)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_25 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>26)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_26 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>27)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_27 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>28)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_28 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>29)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_29 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>30)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_30 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>31)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_31 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>32)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_32 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>33)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_33 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>34)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_34 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>35)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_35 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>36)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_36 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>37)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_37 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>38)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_38 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>39)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_39 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>40)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_40 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>41)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_41 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>42)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_42 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>43)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_43 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>44)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_44 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>45)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_45 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>46)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_46 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>47)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_47 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>48)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_48 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>49)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_49 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>50)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_50 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>51)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_51 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>52)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_52 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>53)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_53 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>54)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_54 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>55)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_55 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>56)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_56 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>57)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_57 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>58)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_58 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>59)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_59 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>60)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_60 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>61)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_61 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>62)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_62 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>63)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_63 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>64)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_64 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>65)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_65 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>66)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_66 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>67)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_67 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>68)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_68 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>69)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_69 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>70)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_70 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>71)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_71 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>72)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_72 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>73)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_73 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>74)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_74 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>75)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_75 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>76)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_76 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>77)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_77 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>78)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_78 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>79)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_79 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>80)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_80 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>81)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_81 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>82)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_82 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>83)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_83 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>84)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_84 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>85)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_85 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>86)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_86 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>87)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_87 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>88)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_88 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>89)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_89 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>90)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_90 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>91)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_91 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>92)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_92 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>93)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_93 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>94)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_94 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>95)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_95 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>96)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_96 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>97)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_97 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>98)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_98 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>99)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_99 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>100)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_100 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>101)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_101 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>102)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_102 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>103)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_103 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>104)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_104 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>105)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_105 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>106)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_106 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>107)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_107 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>108)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_108 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>109)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_109 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>110)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_110 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>111)
+     MUXCY:CI->O           1   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_111 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>112)
+     MUXCY:CI->O           0   0.015   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>_112 (mult_lut6_akak_inst/Madd_adderOut_Madd_cy<0>113)
+     XORCY:CI->O           1   0.180   0.000  mult_lut6_akak_inst/Madd_adderOut_Madd_xor<0>_113 (out_tmp<127>)
+     FDR:D                    -0.012          out_reg_127
+    ----------------------------------------
+    Total                      7.147ns (3.957ns logic, 3.190ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 408 / 408
+-------------------------------------------------------------------------
+Offset:              0.745ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       in0_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to in0_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           268   0.003   0.422  rst_IBUF (rst_IBUF)
+     FDR:R                     0.320          in0_reg_0
+    ----------------------------------------
+    Total                      0.745ns (0.323ns logic, 0.422ns route)
+                                       (43.3% logic, 56.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 128 / 128
+-------------------------------------------------------------------------
+Offset:              0.562ns (Levels of Logic = 1)
+  Source:            out_reg_127 (FF)
+  Destination:       outp<127> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: out_reg_127 to outp<127>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.280   0.279  out_reg_127 (out_reg_127)
+     OBUF:I->O                 0.003          outp_127_OBUF (outp<127>)
+    ----------------------------------------
+    Total                      0.562ns (0.283ns logic, 0.279ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.147|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.99 secs
+ 
+--> 
+
+Total memory usage is 325428 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

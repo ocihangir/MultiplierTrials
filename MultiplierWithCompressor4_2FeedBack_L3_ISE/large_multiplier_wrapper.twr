@@ -1,0 +1,619 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml large_multiplier_wrapper.twx large_multiplier_wrapper.ncd
+-o large_multiplier_wrapper.twr large_multiplier_wrapper.pcf -ucf
+MultiplierWithCompressor.ucf
+
+Design file:              large_multiplier_wrapper.ncd
+Physical constraint file: large_multiplier_wrapper.pcf
+Device,package,speed:     xc6vlx75t,ff784,C,-3 (PRODUCTION 1.17 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 4.9 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 1410418 paths analyzed, 2605 endpoints analyzed, 14 failing endpoints
+ 14 timing errors detected. (14 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.970ns.
+--------------------------------------------------------------------------------
+
+Paths for end point mult_comp_inst/pp0A_38 (SLICE_X28Y85.D6), 2312 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.070ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_38 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.830ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_38
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X19Y71.C5      net (fanout=33)       0.792   mult_comp_inst/st
+    SLICE_X19Y71.C       Tilo                  0.053   mult_comp_inst/in0p<4>
+                                                       mult_comp_inst/Mmux_in0p271
+    SLICE_X15Y75.C5      net (fanout=192)      0.382   mult_comp_inst/in0p<4>
+    SLICE_X15Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp121<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult121/LUT6_1
+    SLICE_X19Y75.C2      net (fanout=3)        0.559   mult_comp_inst/mult_lut6_akak_inst/pp121<1>
+    SLICE_X19Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_27/LUT6_0
+    SLICE_X23Y79.B1      net (fanout=3)        0.712   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+    SLICE_X23Y79.B       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_74/LUT6_1
+    SLICE_X40Y88.A5      net (fanout=3)        1.148   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<1>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.D6      net (fanout=4)        0.716   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.010   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_0
+                                                       mult_comp_inst/pp0A_38
+    -------------------------------------------------  ---------------------------
+    Total                                      4.830ns (0.521ns logic, 4.309ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.056ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_38 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.816ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_38
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X16Y72.A6      net (fanout=33)       0.751   mult_comp_inst/st
+    SLICE_X16Y72.A       Tilo                  0.053   in0_reg<6>
+                                                       mult_comp_inst/Mmux_in0p291
+    SLICE_X18Y74.A3      net (fanout=128)      0.604   mult_comp_inst/in0p<6>
+    SLICE_X18Y74.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp113<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult113/LUT6_3
+    SLICE_X19Y75.C3      net (fanout=3)        0.364   mult_comp_inst/mult_lut6_akak_inst/pp113<3>
+    SLICE_X19Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_27/LUT6_0
+    SLICE_X23Y79.B1      net (fanout=3)        0.712   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+    SLICE_X23Y79.B       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_74/LUT6_1
+    SLICE_X40Y88.A5      net (fanout=3)        1.148   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<1>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.D6      net (fanout=4)        0.716   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.010   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_0
+                                                       mult_comp_inst/pp0A_38
+    -------------------------------------------------  ---------------------------
+    Total                                      4.816ns (0.521ns logic, 4.295ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.046ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_38 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.806ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_38
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X17Y69.B6      net (fanout=33)       0.772   mult_comp_inst/st
+    SLICE_X17Y69.B       Tilo                  0.053   in0_reg<7>
+                                                       mult_comp_inst/Mmux_in0p301
+    SLICE_X18Y75.D5      net (fanout=96)       0.505   mult_comp_inst/in0p<7>
+    SLICE_X18Y75.D       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp113<4>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult113/LUT6_4
+    SLICE_X21Y82.C5      net (fanout=3)        0.537   mult_comp_inst/mult_lut6_akak_inst/pp113<4>
+    SLICE_X21Y82.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_100<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_100/LUT6_0
+    SLICE_X21Y80.C2      net (fanout=3)        0.477   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_100<0>
+    SLICE_X21Y80.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_75<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_75/LUT6_0
+    SLICE_X40Y88.A4      net (fanout=3)        1.278   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_75<0>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.D6      net (fanout=4)        0.716   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.010   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_0
+                                                       mult_comp_inst/pp0A_38
+    -------------------------------------------------  ---------------------------
+    Total                                      4.806ns (0.521ns logic, 4.285ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mult_comp_inst/pp0A_41 (SLICE_X28Y85.A6), 2312 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.067ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_41 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.827ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_41
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X19Y71.C5      net (fanout=33)       0.792   mult_comp_inst/st
+    SLICE_X19Y71.C       Tilo                  0.053   mult_comp_inst/in0p<4>
+                                                       mult_comp_inst/Mmux_in0p271
+    SLICE_X15Y75.C5      net (fanout=192)      0.382   mult_comp_inst/in0p<4>
+    SLICE_X15Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp121<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult121/LUT6_1
+    SLICE_X19Y75.C2      net (fanout=3)        0.559   mult_comp_inst/mult_lut6_akak_inst/pp121<1>
+    SLICE_X19Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_27/LUT6_0
+    SLICE_X23Y79.B1      net (fanout=3)        0.712   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+    SLICE_X23Y79.B       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_74/LUT6_1
+    SLICE_X40Y88.A5      net (fanout=3)        1.148   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<1>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.A6      net (fanout=4)        0.711   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.012   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_3
+                                                       mult_comp_inst/pp0A_41
+    -------------------------------------------------  ---------------------------
+    Total                                      4.827ns (0.523ns logic, 4.304ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.053ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_41 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.813ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_41
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X16Y72.A6      net (fanout=33)       0.751   mult_comp_inst/st
+    SLICE_X16Y72.A       Tilo                  0.053   in0_reg<6>
+                                                       mult_comp_inst/Mmux_in0p291
+    SLICE_X18Y74.A3      net (fanout=128)      0.604   mult_comp_inst/in0p<6>
+    SLICE_X18Y74.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp113<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult113/LUT6_3
+    SLICE_X19Y75.C3      net (fanout=3)        0.364   mult_comp_inst/mult_lut6_akak_inst/pp113<3>
+    SLICE_X19Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_27/LUT6_0
+    SLICE_X23Y79.B1      net (fanout=3)        0.712   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+    SLICE_X23Y79.B       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_74/LUT6_1
+    SLICE_X40Y88.A5      net (fanout=3)        1.148   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<1>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.A6      net (fanout=4)        0.711   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.012   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_3
+                                                       mult_comp_inst/pp0A_41
+    -------------------------------------------------  ---------------------------
+    Total                                      4.813ns (0.523ns logic, 4.290ns route)
+                                                       (10.9% logic, 89.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.043ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_41 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.803ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_41
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X17Y69.B6      net (fanout=33)       0.772   mult_comp_inst/st
+    SLICE_X17Y69.B       Tilo                  0.053   in0_reg<7>
+                                                       mult_comp_inst/Mmux_in0p301
+    SLICE_X18Y75.D5      net (fanout=96)       0.505   mult_comp_inst/in0p<7>
+    SLICE_X18Y75.D       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp113<4>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult113/LUT6_4
+    SLICE_X21Y82.C5      net (fanout=3)        0.537   mult_comp_inst/mult_lut6_akak_inst/pp113<4>
+    SLICE_X21Y82.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_100<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_100/LUT6_0
+    SLICE_X21Y80.C2      net (fanout=3)        0.477   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_100<0>
+    SLICE_X21Y80.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_75<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_75/LUT6_0
+    SLICE_X40Y88.A4      net (fanout=3)        1.278   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_75<0>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.A6      net (fanout=4)        0.711   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.012   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_3
+                                                       mult_comp_inst/pp0A_41
+    -------------------------------------------------  ---------------------------
+    Total                                      4.803ns (0.523ns logic, 4.280ns route)
+                                                       (10.9% logic, 89.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mult_comp_inst/pp0A_40 (SLICE_X28Y85.B6), 2312 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.050ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_40 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.810ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_40
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X19Y71.C5      net (fanout=33)       0.792   mult_comp_inst/st
+    SLICE_X19Y71.C       Tilo                  0.053   mult_comp_inst/in0p<4>
+                                                       mult_comp_inst/Mmux_in0p271
+    SLICE_X15Y75.C5      net (fanout=192)      0.382   mult_comp_inst/in0p<4>
+    SLICE_X15Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp121<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult121/LUT6_1
+    SLICE_X19Y75.C2      net (fanout=3)        0.559   mult_comp_inst/mult_lut6_akak_inst/pp121<1>
+    SLICE_X19Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_27/LUT6_0
+    SLICE_X23Y79.B1      net (fanout=3)        0.712   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+    SLICE_X23Y79.B       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_74/LUT6_1
+    SLICE_X40Y88.A5      net (fanout=3)        1.148   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<1>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.B6      net (fanout=4)        0.696   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.010   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_2
+                                                       mult_comp_inst/pp0A_40
+    -------------------------------------------------  ---------------------------
+    Total                                      4.810ns (0.521ns logic, 4.289ns route)
+                                                       (10.8% logic, 89.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.036ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_40 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.796ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_40
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X16Y72.A6      net (fanout=33)       0.751   mult_comp_inst/st
+    SLICE_X16Y72.A       Tilo                  0.053   in0_reg<6>
+                                                       mult_comp_inst/Mmux_in0p291
+    SLICE_X18Y74.A3      net (fanout=128)      0.604   mult_comp_inst/in0p<6>
+    SLICE_X18Y74.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp113<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult113/LUT6_3
+    SLICE_X19Y75.C3      net (fanout=3)        0.364   mult_comp_inst/mult_lut6_akak_inst/pp113<3>
+    SLICE_X19Y75.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_27/LUT6_0
+    SLICE_X23Y79.B1      net (fanout=3)        0.712   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_27<0>
+    SLICE_X23Y79.B       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_74/LUT6_1
+    SLICE_X40Y88.A5      net (fanout=3)        1.148   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_74<1>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.B6      net (fanout=4)        0.696   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.010   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_2
+                                                       mult_comp_inst/pp0A_40
+    -------------------------------------------------  ---------------------------
+    Total                                      4.796ns (0.521ns logic, 4.275ns route)
+                                                       (10.9% logic, 89.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -0.026ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               mult_comp_inst/st (FF)
+  Destination:          mult_comp_inst/pp0A_40 (FF)
+  Requirement:          4.900ns
+  Data Path Delay:      4.786ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.105ns (1.236 - 1.341)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: mult_comp_inst/st to mult_comp_inst/pp0A_40
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y76.DQ      Tcko                  0.246   mult_comp_inst/st
+                                                       mult_comp_inst/st
+    SLICE_X17Y69.B6      net (fanout=33)       0.772   mult_comp_inst/st
+    SLICE_X17Y69.B       Tilo                  0.053   in0_reg<7>
+                                                       mult_comp_inst/Mmux_in0p301
+    SLICE_X18Y75.D5      net (fanout=96)       0.505   mult_comp_inst/in0p<7>
+    SLICE_X18Y75.D       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/pp113<4>
+                                                       mult_comp_inst/mult_lut6_akak_inst/lvl0_mult113/LUT6_4
+    SLICE_X21Y82.C5      net (fanout=3)        0.537   mult_comp_inst/mult_lut6_akak_inst/pp113<4>
+    SLICE_X21Y82.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_100<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL0_100/LUT6_0
+    SLICE_X21Y80.C2      net (fanout=3)        0.477   mult_comp_inst/mult_lut6_akak_inst/gpcOutL0_100<0>
+    SLICE_X21Y80.C       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_75<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL1_75/LUT6_0
+    SLICE_X40Y88.A4      net (fanout=3)        1.278   mult_comp_inst/mult_lut6_akak_inst/gpcOutL1_75<0>
+    SLICE_X40Y88.A       Tilo                  0.053   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<0>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcL2_7/LUT6_2
+    SLICE_X28Y85.B6      net (fanout=4)        0.696   mult_comp_inst/mult_lut6_akak_inst/gpcOutL2_7<2>
+    SLICE_X28Y85.CLK     Tas                   0.010   mult_comp_inst/pp0A<38>
+                                                       mult_comp_inst/mult_lut6_akak_inst/gpcLN_14/LUT6_2
+                                                       mult_comp_inst/pp0A_40
+    -------------------------------------------------  ---------------------------
+    Total                                      4.786ns (0.521ns logic, 4.265ns route)
+                                                       (10.9% logic, 89.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 4.9 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point mult_comp_inst/outc0B_102 (SLICE_X26Y43.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.115ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mult_comp_inst/pp1B_70 (FF)
+  Destination:          mult_comp_inst/outc0B_102 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.206ns (Levels of Logic = 1)
+  Clock Path Skew:      0.091ns (0.654 - 0.563)
+  Source Clock:         clk_BUFGP rising at 4.900ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: mult_comp_inst/pp1B_70 to mult_comp_inst/outc0B_102
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y38.DQ      Tcko                  0.098   mult_comp_inst/pp1B<70>
+                                                       mult_comp_inst/pp1B_70
+    SLICE_X26Y43.C5      net (fanout=3)        0.184   mult_comp_inst/pp1B<70>
+    SLICE_X26Y43.CLK     Tah         (-Th)     0.076   mult_comp_inst/outc0B<102>
+                                                       mult_comp_inst/comp_inst/gpcLM_51/LUT6_0
+                                                       mult_comp_inst/outc0B_102
+    -------------------------------------------------  ---------------------------
+    Total                                      0.206ns (0.022ns logic, 0.184ns route)
+                                                       (10.7% logic, 89.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point mult_comp_inst/outc0B_103 (SLICE_X26Y43.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.116ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mult_comp_inst/pp1B_70 (FF)
+  Destination:          mult_comp_inst/outc0B_103 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.207ns (Levels of Logic = 1)
+  Clock Path Skew:      0.091ns (0.654 - 0.563)
+  Source Clock:         clk_BUFGP rising at 4.900ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: mult_comp_inst/pp1B_70 to mult_comp_inst/outc0B_103
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y38.DQ      Tcko                  0.098   mult_comp_inst/pp1B<70>
+                                                       mult_comp_inst/pp1B_70
+    SLICE_X26Y43.B5      net (fanout=3)        0.186   mult_comp_inst/pp1B<70>
+    SLICE_X26Y43.CLK     Tah         (-Th)     0.077   mult_comp_inst/outc0B<102>
+                                                       mult_comp_inst/comp_inst/gpcLM_51/LUT6_1
+                                                       mult_comp_inst/outc0B_103
+    -------------------------------------------------  ---------------------------
+    Total                                      0.207ns (0.021ns logic, 0.186ns route)
+                                                       (10.1% logic, 89.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point out_reg_57 (SLICE_X33Y44.B6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.125ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               mult_comp_inst/outc0B_57 (FF)
+  Destination:          out_reg_57 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.137ns (Levels of Logic = 1)
+  Clock Path Skew:      0.012ns (0.065 - 0.053)
+  Source Clock:         clk_BUFGP rising at 4.900ns
+  Destination Clock:    clk_BUFGP rising at 4.900ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: mult_comp_inst/outc0B_57 to out_reg_57
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X32Y44.DQ      Tcko                  0.115   mult_comp_inst/outc0B<57>
+                                                       mult_comp_inst/outc0B_57
+    SLICE_X33Y44.B6      net (fanout=1)        0.040   mult_comp_inst/outc0B<57>
+    SLICE_X33Y44.CLK     Tah         (-Th)     0.018   out_reg<59>
+                                                       mult_comp_inst/Madd_outp_lut<57>
+                                                       mult_comp_inst/Madd_outp_cy<59>
+                                                       out_reg_57
+    -------------------------------------------------  ---------------------------
+    Total                                      0.137ns (0.097ns logic, 0.040ns route)
+                                                       (70.8% logic, 29.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 4.9 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 3.650ns (period - min period limit)
+  Period: 4.900ns
+  Min period limit: 1.250ns (800.000MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 4.068ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 4.900ns
+  High pulse: 2.450ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: in1_reg<28>/SR
+  Logical resource: in1_reg_31/SR
+  Location pin: SLICE_X16Y75.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+Slack: 4.068ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 4.900ns
+  High pulse: 2.450ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: in1_reg<27>/SR
+  Logical resource: in1_reg_29/SR
+  Location pin: SLICE_X16Y76.SR
+  Clock network: rst_IBUF
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.970|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 14  Score: 416  (Setup/Max: 416, Hold: 0)
+
+Constraints cover 1410418 paths, 0 nets, and 18249 connections
+
+Design statistics:
+   Minimum period:   4.970ns{1}   (Maximum frequency: 201.207MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sun Sep 06 20:24:58 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 468 MB
+
+
+

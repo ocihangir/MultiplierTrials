@@ -13,15 +13,17 @@
          <ClosedNode>/gpc032 C:|Users|cihangir|Documents|Projects|University|MultiplierTrials|MultiplierWithCompressor4_2_II2_ISEProject|gpc_modules_lut6_used.v</ClosedNode>
          <ClosedNode>/gpc112 C:|Users|cihangir|Documents|Projects|University|MultiplierTrials|MultiplierWithCompressor4_2_II2_ISEProject|gpc_modules_lut6_used.v</ClosedNode>
          <ClosedNode>/gpc122 C:|Users|cihangir|Documents|Projects|University|MultiplierTrials|MultiplierWithCompressor4_2_II2_ISEProject|gpc_modules_lut6_used.v</ClosedNode>
+         <ClosedNode>/large_multiplier_wrapper C:|Users|HP|Desktop|Work|MultiplierTrials|MultiplierWithCompressor4_2FeedForward_L2_ISEProject|largemultiplierwrapper.v/mult_comp_inst - MultiplierWithCompressor/comp_inst - Compressor4to2</ClosedNode>
+         <ClosedNode>/large_multiplier_wrapper C:|Users|HP|Desktop|Work|MultiplierTrials|MultiplierWithCompressor4_2FeedForward_L2_ISEProject|largemultiplierwrapper.v/mult_comp_inst - MultiplierWithCompressor/mult_lut6_akak_inst - mult_32x64_lut6_akak</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TBMultiplier - behavior (C:/Users/cihangir/Documents/Projects/University/MultiplierTrials/MultiplierWithCompressor4_2_II2_ISEProject/TBMultiplier.vhd)</SelectedItem>
+         <SelectedItem>large_multiplier_wrapper (C:/Users/HP/Desktop/Work/MultiplierTrials/MultiplierWithCompressor4_2FeedForward_L2_ISEProject/largemultiplierwrapper.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >8</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001cc000000020000000000000000000000000200000064ffffffff000000810000000300000002000001cc0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000206000000020000000000000000000000000200000064ffffffff000000810000000300000002000002060000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>TBMultiplier - behavior (C:/Users/cihangir/Documents/Projects/University/MultiplierTrials/MultiplierWithCompressor4_2_II2_ISEProject/TBMultiplier.vhd)</CurrentItem>
+      <CurrentItem>large_multiplier_wrapper (C:/Users/HP/Desktop/Work/MultiplierTrials/MultiplierWithCompressor4_2FeedForward_L2_ISEProject/largemultiplierwrapper.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -42,7 +44,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000002d70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001d8000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004200000001000000000000002400000001000000000000006600000001000000000000010c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>4to2Compressor.v</CurrentItem>
    </ItemView>
@@ -85,13 +87,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem>Implement Design</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000207000000010000000100000000000000000000000064ffffffff000000810000000000000001000002070000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem>Implement Design</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -104,18 +106,31 @@
          <ClosedNode>/gpc122 C:|Users|cihangir|Documents|Projects|University|MultiplierTrials|MultiplierWithCompressor4_2_II2_ISEProject|gpc_modules_lut6_used.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TBMultiplier - behavior (C:/Users/cihangir/Documents/Projects/University/MultiplierTrials/MultiplierWithCompressor4_2_II2_ISEProject/TBMultiplier.vhd)</SelectedItem>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>TBMultiplier - behavior (C:/Users/cihangir/Documents/Projects/University/MultiplierTrials/MultiplierWithCompressor4_2_II2_ISEProject/TBMultiplier.vhd)</CurrentItem>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem/>
@@ -126,33 +141,45 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
-   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem></SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000207000000010000000100000000000000000000000064ffffffff000000810000000000000001000002070000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
-   </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>ISim Simulator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000207000000010000000100000000000000000000000064ffffffff000000810000000000000001000002070000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_PACKAGE_BODY" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" ></ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>
