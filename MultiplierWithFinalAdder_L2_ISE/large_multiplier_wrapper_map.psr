@@ -1,0 +1,628 @@
+Release 14.7 Physical Synthesis Report P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : ON
+    Retiming                        : OFF
+    Equivalent Register Removal     : ON
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : OFF
+    Register Duplication            : OFF
+
+---- Intelligent clock gating       : OFF
+
+---- Target Parameters
+Target Device                       : 6vlx75tff784-3
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of LUTs removed by SmartOpt Trimming               | 496             
+   Number of LUTs removed by Trimming                        | 85              
+
+   Overall change in number of design objects                |  -581            
+
+
+---- Details
+
+
+
+Removed components                                     | Optimization             
+-------------------------------------------------------|--------------------------
+][1354_42                                              | SmartOpt Trimming        
+][1360_43                                              | SmartOpt Trimming        
+][1613_45                                              | SmartOpt Trimming        
+][1616_46                                              | SmartOpt Trimming        
+][1639_49                                              | SmartOpt Trimming        
+][1643_50                                              | SmartOpt Trimming        
+][2088_51                                              | SmartOpt Trimming        
+][2095_52                                              | SmartOpt Trimming        
+][2102_53                                              | SmartOpt Trimming        
+][2109_54                                              | SmartOpt Trimming        
+][2116_55                                              | SmartOpt Trimming        
+][2123_56                                              | SmartOpt Trimming        
+][2130_57                                              | SmartOpt Trimming        
+][2137_58                                              | SmartOpt Trimming        
+][2144_59                                              | SmartOpt Trimming        
+][2151_60                                              | SmartOpt Trimming        
+][2158_61                                              | SmartOpt Trimming        
+][2165_62                                              | SmartOpt Trimming        
+][2172_63                                              | SmartOpt Trimming        
+][2179_64                                              | SmartOpt Trimming        
+][2186_65                                              | SmartOpt Trimming        
+][2193_66                                              | SmartOpt Trimming        
+][2200_67                                              | SmartOpt Trimming        
+][2207_68                                              | SmartOpt Trimming        
+][2214_69                                              | SmartOpt Trimming        
+][2221_70                                              | SmartOpt Trimming        
+][2228_71                                              | SmartOpt Trimming        
+][2235_72                                              | SmartOpt Trimming        
+][2242_73                                              | SmartOpt Trimming        
+][2249_74                                              | SmartOpt Trimming        
+][2256_75                                              | SmartOpt Trimming        
+][2263_76                                              | SmartOpt Trimming        
+][2270_77                                              | SmartOpt Trimming        
+][2277_78                                              | SmartOpt Trimming        
+][2284_79                                              | SmartOpt Trimming        
+][2291_80                                              | SmartOpt Trimming        
+][2298_81                                              | SmartOpt Trimming        
+][355_32                                               | SmartOpt Trimming        
+][360_33                                               | SmartOpt Trimming        
+][361_34                                               | SmartOpt Trimming        
+][364_35                                               | SmartOpt Trimming        
+][378_36                                               | SmartOpt Trimming        
+][383_37                                               | SmartOpt Trimming        
+][462_38                                               | SmartOpt Trimming        
+][467_39                                               | SmartOpt Trimming        
+][516_40                                               | SmartOpt Trimming        
+][521_41                                               | SmartOpt Trimming        
+][const_100_129                                        | SmartOpt Trimming        
+][const_102_130                                        | SmartOpt Trimming        
+][const_104_131                                        | SmartOpt Trimming        
+][const_106_132                                        | SmartOpt Trimming        
+][const_108_133                                        | SmartOpt Trimming        
+][const_10_84                                          | SmartOpt Trimming        
+][const_110_134                                        | SmartOpt Trimming        
+][const_112_135                                        | SmartOpt Trimming        
+][const_114_136                                        | SmartOpt Trimming        
+][const_116_137                                        | SmartOpt Trimming        
+][const_118_138                                        | SmartOpt Trimming        
+][const_120_139                                        | SmartOpt Trimming        
+][const_122_140                                        | SmartOpt Trimming        
+][const_124_141                                        | SmartOpt Trimming        
+][const_126_142                                        | SmartOpt Trimming        
+][const_128_143                                        | SmartOpt Trimming        
+][const_12_85                                          | SmartOpt Trimming        
+][const_130_144                                        | SmartOpt Trimming        
+][const_132_145                                        | SmartOpt Trimming        
+][const_134_146                                        | SmartOpt Trimming        
+][const_136_147                                        | SmartOpt Trimming        
+][const_138_148                                        | SmartOpt Trimming        
+][const_140_149                                        | SmartOpt Trimming        
+][const_142_150                                        | SmartOpt Trimming        
+][const_144_151                                        | SmartOpt Trimming        
+][const_146_152                                        | SmartOpt Trimming        
+][const_148_153                                        | SmartOpt Trimming        
+][const_14_86                                          | SmartOpt Trimming        
+][const_150_154                                        | SmartOpt Trimming        
+][const_152_155                                        | SmartOpt Trimming        
+][const_154_156                                        | SmartOpt Trimming        
+][const_156_157                                        | SmartOpt Trimming        
+][const_158_158                                        | SmartOpt Trimming        
+][const_160_159                                        | SmartOpt Trimming        
+][const_162_160                                        | SmartOpt Trimming        
+][const_164_161                                        | SmartOpt Trimming        
+][const_166_162                                        | SmartOpt Trimming        
+][const_168_163                                        | SmartOpt Trimming        
+][const_16_87                                          | SmartOpt Trimming        
+][const_170_164                                        | SmartOpt Trimming        
+][const_172_165                                        | SmartOpt Trimming        
+][const_174_166                                        | SmartOpt Trimming        
+][const_176_167                                        | SmartOpt Trimming        
+][const_178_168                                        | SmartOpt Trimming        
+][const_180_169                                        | SmartOpt Trimming        
+][const_182_170                                        | SmartOpt Trimming        
+][const_184_171                                        | SmartOpt Trimming        
+][const_186_172                                        | SmartOpt Trimming        
+][const_188_173                                        | SmartOpt Trimming        
+][const_18_88                                          | SmartOpt Trimming        
+][const_190_174                                        | SmartOpt Trimming        
+][const_192_175                                        | SmartOpt Trimming        
+][const_194_176                                        | SmartOpt Trimming        
+][const_196_177                                        | SmartOpt Trimming        
+][const_198_178                                        | SmartOpt Trimming        
+][const_200_179                                        | SmartOpt Trimming        
+][const_202_180                                        | SmartOpt Trimming        
+][const_204_181                                        | SmartOpt Trimming        
+][const_206_182                                        | SmartOpt Trimming        
+][const_208_183                                        | SmartOpt Trimming        
+][const_20_89                                          | SmartOpt Trimming        
+][const_210_184                                        | SmartOpt Trimming        
+][const_212_185                                        | SmartOpt Trimming        
+][const_214_186                                        | SmartOpt Trimming        
+][const_216_187                                        | SmartOpt Trimming        
+][const_218_188                                        | SmartOpt Trimming        
+][const_220_189                                        | SmartOpt Trimming        
+][const_222_190                                        | SmartOpt Trimming        
+][const_224_191                                        | SmartOpt Trimming        
+][const_226_192                                        | SmartOpt Trimming        
+][const_228_193                                        | SmartOpt Trimming        
+][const_22_90                                          | SmartOpt Trimming        
+][const_230_194                                        | SmartOpt Trimming        
+][const_232_195                                        | SmartOpt Trimming        
+][const_234_196                                        | SmartOpt Trimming        
+][const_236_197                                        | SmartOpt Trimming        
+][const_238_198                                        | SmartOpt Trimming        
+][const_240_199                                        | SmartOpt Trimming        
+][const_242_200                                        | SmartOpt Trimming        
+][const_244_201                                        | SmartOpt Trimming        
+][const_246_202                                        | SmartOpt Trimming        
+][const_248_203                                        | SmartOpt Trimming        
+][const_24_91                                          | SmartOpt Trimming        
+][const_250_204                                        | SmartOpt Trimming        
+][const_252_205                                        | SmartOpt Trimming        
+][const_254_206                                        | SmartOpt Trimming        
+][const_256_207                                        | SmartOpt Trimming        
+][const_258_208                                        | SmartOpt Trimming        
+][const_260_209                                        | SmartOpt Trimming        
+][const_262_210                                        | SmartOpt Trimming        
+][const_264_211                                        | SmartOpt Trimming        
+][const_266_212                                        | SmartOpt Trimming        
+][const_268_213                                        | SmartOpt Trimming        
+][const_26_92                                          | SmartOpt Trimming        
+][const_270_214                                        | SmartOpt Trimming        
+][const_272_215                                        | SmartOpt Trimming        
+][const_274_216                                        | SmartOpt Trimming        
+][const_276_217                                        | SmartOpt Trimming        
+][const_278_218                                        | SmartOpt Trimming        
+][const_280_219                                        | SmartOpt Trimming        
+][const_282_220                                        | SmartOpt Trimming        
+][const_284_221                                        | SmartOpt Trimming        
+][const_286_222                                        | SmartOpt Trimming        
+][const_288_223                                        | SmartOpt Trimming        
+][const_28_93                                          | SmartOpt Trimming        
+][const_290_224                                        | SmartOpt Trimming        
+][const_292_225                                        | SmartOpt Trimming        
+][const_294_226                                        | SmartOpt Trimming        
+][const_296_227                                        | SmartOpt Trimming        
+][const_298_228                                        | SmartOpt Trimming        
+][const_300_229                                        | SmartOpt Trimming        
+][const_302_230                                        | SmartOpt Trimming        
+][const_304_231                                        | SmartOpt Trimming        
+][const_306_232                                        | SmartOpt Trimming        
+][const_308_233                                        | SmartOpt Trimming        
+][const_30_94                                          | SmartOpt Trimming        
+][const_310_234                                        | SmartOpt Trimming        
+][const_312_235                                        | SmartOpt Trimming        
+][const_314_236                                        | SmartOpt Trimming        
+][const_316_237                                        | SmartOpt Trimming        
+][const_318_238                                        | SmartOpt Trimming        
+][const_320_239                                        | SmartOpt Trimming        
+][const_322_240                                        | SmartOpt Trimming        
+][const_324_241                                        | SmartOpt Trimming        
+][const_326_242                                        | SmartOpt Trimming        
+][const_328_243                                        | SmartOpt Trimming        
+][const_32_95                                          | SmartOpt Trimming        
+][const_330_244                                        | SmartOpt Trimming        
+][const_332_245                                        | SmartOpt Trimming        
+][const_334_246                                        | SmartOpt Trimming        
+][const_336_247                                        | SmartOpt Trimming        
+][const_338_248                                        | SmartOpt Trimming        
+][const_340_249                                        | SmartOpt Trimming        
+][const_342_250                                        | SmartOpt Trimming        
+][const_344_251                                        | SmartOpt Trimming        
+][const_346_252                                        | SmartOpt Trimming        
+][const_348_253                                        | SmartOpt Trimming        
+][const_34_96                                          | SmartOpt Trimming        
+][const_350_254                                        | SmartOpt Trimming        
+][const_352_255                                        | SmartOpt Trimming        
+][const_354_256                                        | SmartOpt Trimming        
+][const_356_257                                        | SmartOpt Trimming        
+][const_358_258                                        | SmartOpt Trimming        
+][const_360_259                                        | SmartOpt Trimming        
+][const_362_260                                        | SmartOpt Trimming        
+][const_364_261                                        | SmartOpt Trimming        
+][const_366_262                                        | SmartOpt Trimming        
+][const_368_263                                        | SmartOpt Trimming        
+][const_36_97                                          | SmartOpt Trimming        
+][const_370_264                                        | SmartOpt Trimming        
+][const_372_265                                        | SmartOpt Trimming        
+][const_374_266                                        | SmartOpt Trimming        
+][const_376_267                                        | SmartOpt Trimming        
+][const_378_268                                        | SmartOpt Trimming        
+][const_380_269                                        | SmartOpt Trimming        
+][const_382_270                                        | SmartOpt Trimming        
+][const_384_271                                        | SmartOpt Trimming        
+][const_386_272                                        | SmartOpt Trimming        
+][const_388_273                                        | SmartOpt Trimming        
+][const_38_98                                          | SmartOpt Trimming        
+][const_390_274                                        | SmartOpt Trimming        
+][const_392_275                                        | SmartOpt Trimming        
+][const_394_276                                        | SmartOpt Trimming        
+][const_396_277                                        | SmartOpt Trimming        
+][const_398_278                                        | SmartOpt Trimming        
+][const_400_279                                        | SmartOpt Trimming        
+][const_402_280                                        | SmartOpt Trimming        
+][const_404_281                                        | SmartOpt Trimming        
+][const_406_282                                        | SmartOpt Trimming        
+][const_408_283                                        | SmartOpt Trimming        
+][const_40_99                                          | SmartOpt Trimming        
+][const_410_284                                        | SmartOpt Trimming        
+][const_412_285                                        | SmartOpt Trimming        
+][const_414_286                                        | SmartOpt Trimming        
+][const_416_287                                        | SmartOpt Trimming        
+][const_418_288                                        | SmartOpt Trimming        
+][const_420_289                                        | SmartOpt Trimming        
+][const_422_290                                        | SmartOpt Trimming        
+][const_424_291                                        | SmartOpt Trimming        
+][const_426_292                                        | SmartOpt Trimming        
+][const_428_293                                        | SmartOpt Trimming        
+][const_42_100                                         | SmartOpt Trimming        
+][const_430_294                                        | SmartOpt Trimming        
+][const_432_295                                        | SmartOpt Trimming        
+][const_434_296                                        | SmartOpt Trimming        
+][const_436_297                                        | SmartOpt Trimming        
+][const_438_298                                        | SmartOpt Trimming        
+][const_440_299                                        | SmartOpt Trimming        
+][const_442_300                                        | SmartOpt Trimming        
+][const_444_301                                        | SmartOpt Trimming        
+][const_446_302                                        | SmartOpt Trimming        
+][const_448_303                                        | SmartOpt Trimming        
+][const_44_101                                         | SmartOpt Trimming        
+][const_450_304                                        | SmartOpt Trimming        
+][const_452_305                                        | SmartOpt Trimming        
+][const_454_306                                        | SmartOpt Trimming        
+][const_456_307                                        | SmartOpt Trimming        
+][const_458_308                                        | SmartOpt Trimming        
+][const_460_309                                        | SmartOpt Trimming        
+][const_462_310                                        | SmartOpt Trimming        
+][const_464_311                                        | SmartOpt Trimming        
+][const_466_312                                        | SmartOpt Trimming        
+][const_468_313                                        | SmartOpt Trimming        
+][const_46_102                                         | SmartOpt Trimming        
+][const_470_314                                        | SmartOpt Trimming        
+][const_472_315                                        | SmartOpt Trimming        
+][const_474_316                                        | SmartOpt Trimming        
+][const_476_317                                        | SmartOpt Trimming        
+][const_478_318                                        | SmartOpt Trimming        
+][const_480_319                                        | SmartOpt Trimming        
+][const_482_320                                        | SmartOpt Trimming        
+][const_484_321                                        | SmartOpt Trimming        
+][const_486_322                                        | SmartOpt Trimming        
+][const_488_323                                        | SmartOpt Trimming        
+][const_48_103                                         | SmartOpt Trimming        
+][const_490_324                                        | SmartOpt Trimming        
+][const_492_325                                        | SmartOpt Trimming        
+][const_494_326                                        | SmartOpt Trimming        
+][const_496_327                                        | SmartOpt Trimming        
+][const_498_328                                        | SmartOpt Trimming        
+][const_500_329                                        | SmartOpt Trimming        
+][const_502_330                                        | SmartOpt Trimming        
+][const_504_331                                        | SmartOpt Trimming        
+][const_506_332                                        | SmartOpt Trimming        
+][const_508_333                                        | SmartOpt Trimming        
+][const_50_104                                         | SmartOpt Trimming        
+][const_510_334                                        | SmartOpt Trimming        
+][const_512_335                                        | SmartOpt Trimming        
+][const_514_336                                        | SmartOpt Trimming        
+][const_516_337                                        | SmartOpt Trimming        
+][const_518_338                                        | SmartOpt Trimming        
+][const_520_339                                        | SmartOpt Trimming        
+][const_521_340                                        | SmartOpt Trimming        
+][const_523_341                                        | SmartOpt Trimming        
+][const_524_342                                        | SmartOpt Trimming        
+][const_526_343                                        | SmartOpt Trimming        
+][const_527_344                                        | SmartOpt Trimming        
+][const_529_345                                        | SmartOpt Trimming        
+][const_52_105                                         | SmartOpt Trimming        
+][const_530_346                                        | SmartOpt Trimming        
+][const_532_347                                        | SmartOpt Trimming        
+][const_533_348                                        | SmartOpt Trimming        
+][const_535_349                                        | SmartOpt Trimming        
+][const_536_350                                        | SmartOpt Trimming        
+][const_538_351                                        | SmartOpt Trimming        
+][const_539_352                                        | SmartOpt Trimming        
+][const_541_353                                        | SmartOpt Trimming        
+][const_542_354                                        | SmartOpt Trimming        
+][const_544_355                                        | SmartOpt Trimming        
+][const_545_356                                        | SmartOpt Trimming        
+][const_547_357                                        | SmartOpt Trimming        
+][const_548_358                                        | SmartOpt Trimming        
+][const_54_106                                         | SmartOpt Trimming        
+][const_550_359                                        | SmartOpt Trimming        
+][const_551_360                                        | SmartOpt Trimming        
+][const_553_361                                        | SmartOpt Trimming        
+][const_554_362                                        | SmartOpt Trimming        
+][const_556_363                                        | SmartOpt Trimming        
+][const_557_364                                        | SmartOpt Trimming        
+][const_559_365                                        | SmartOpt Trimming        
+][const_560_366                                        | SmartOpt Trimming        
+][const_562_367                                        | SmartOpt Trimming        
+][const_563_368                                        | SmartOpt Trimming        
+][const_565_369                                        | SmartOpt Trimming        
+][const_566_370                                        | SmartOpt Trimming        
+][const_568_371                                        | SmartOpt Trimming        
+][const_569_372                                        | SmartOpt Trimming        
+][const_56_107                                         | SmartOpt Trimming        
+][const_571_373                                        | SmartOpt Trimming        
+][const_572_374                                        | SmartOpt Trimming        
+][const_574_375                                        | SmartOpt Trimming        
+][const_575_376                                        | SmartOpt Trimming        
+][const_577_377                                        | SmartOpt Trimming        
+][const_578_378                                        | SmartOpt Trimming        
+][const_580_379                                        | SmartOpt Trimming        
+][const_581_380                                        | SmartOpt Trimming        
+][const_583_381                                        | SmartOpt Trimming        
+][const_584_382                                        | SmartOpt Trimming        
+][const_586_383                                        | SmartOpt Trimming        
+][const_587_384                                        | SmartOpt Trimming        
+][const_589_385                                        | SmartOpt Trimming        
+][const_58_108                                         | SmartOpt Trimming        
+][const_590_386                                        | SmartOpt Trimming        
+][const_592_387                                        | SmartOpt Trimming        
+][const_593_388                                        | SmartOpt Trimming        
+][const_595_389                                        | SmartOpt Trimming        
+][const_596_390                                        | SmartOpt Trimming        
+][const_598_391                                        | SmartOpt Trimming        
+][const_599_392                                        | SmartOpt Trimming        
+][const_601_393                                        | SmartOpt Trimming        
+][const_602_394                                        | SmartOpt Trimming        
+][const_604_395                                        | SmartOpt Trimming        
+][const_605_396                                        | SmartOpt Trimming        
+][const_607_397                                        | SmartOpt Trimming        
+][const_608_398                                        | SmartOpt Trimming        
+][const_60_109                                         | SmartOpt Trimming        
+][const_610_399                                        | SmartOpt Trimming        
+][const_611_400                                        | SmartOpt Trimming        
+][const_613_401                                        | SmartOpt Trimming        
+][const_614_402                                        | SmartOpt Trimming        
+][const_616_403                                        | SmartOpt Trimming        
+][const_617_404                                        | SmartOpt Trimming        
+][const_619_405                                        | SmartOpt Trimming        
+][const_620_406                                        | SmartOpt Trimming        
+][const_622_407                                        | SmartOpt Trimming        
+][const_623_408                                        | SmartOpt Trimming        
+][const_625_409                                        | SmartOpt Trimming        
+][const_626_410                                        | SmartOpt Trimming        
+][const_628_411                                        | SmartOpt Trimming        
+][const_629_412                                        | SmartOpt Trimming        
+][const_62_110                                         | SmartOpt Trimming        
+][const_631_413                                        | SmartOpt Trimming        
+][const_632_414                                        | SmartOpt Trimming        
+][const_634_415                                        | SmartOpt Trimming        
+][const_635_416                                        | SmartOpt Trimming        
+][const_637_417                                        | SmartOpt Trimming        
+][const_638_418                                        | SmartOpt Trimming        
+][const_640_419                                        | SmartOpt Trimming        
+][const_641_420                                        | SmartOpt Trimming        
+][const_643_421                                        | SmartOpt Trimming        
+][const_644_422                                        | SmartOpt Trimming        
+][const_646_423                                        | SmartOpt Trimming        
+][const_647_424                                        | SmartOpt Trimming        
+][const_649_425                                        | SmartOpt Trimming        
+][const_64_111                                         | SmartOpt Trimming        
+][const_650_426                                        | SmartOpt Trimming        
+][const_652_427                                        | SmartOpt Trimming        
+][const_653_428                                        | SmartOpt Trimming        
+][const_655_429                                        | SmartOpt Trimming        
+][const_656_430                                        | SmartOpt Trimming        
+][const_658_431                                        | SmartOpt Trimming        
+][const_659_432                                        | SmartOpt Trimming        
+][const_661_433                                        | SmartOpt Trimming        
+][const_662_434                                        | SmartOpt Trimming        
+][const_664_435                                        | SmartOpt Trimming        
+][const_665_436                                        | SmartOpt Trimming        
+][const_667_437                                        | SmartOpt Trimming        
+][const_668_438                                        | SmartOpt Trimming        
+][const_66_112                                         | SmartOpt Trimming        
+][const_670_439                                        | SmartOpt Trimming        
+][const_671_440                                        | SmartOpt Trimming        
+][const_673_441                                        | SmartOpt Trimming        
+][const_674_442                                        | SmartOpt Trimming        
+][const_676_443                                        | SmartOpt Trimming        
+][const_677_444                                        | SmartOpt Trimming        
+][const_679_445                                        | SmartOpt Trimming        
+][const_680_446                                        | SmartOpt Trimming        
+][const_682_447                                        | SmartOpt Trimming        
+][const_683_448                                        | SmartOpt Trimming        
+][const_685_449                                        | SmartOpt Trimming        
+][const_686_450                                        | SmartOpt Trimming        
+][const_688_451                                        | SmartOpt Trimming        
+][const_689_452                                        | SmartOpt Trimming        
+][const_68_113                                         | SmartOpt Trimming        
+][const_691_453                                        | SmartOpt Trimming        
+][const_692_454                                        | SmartOpt Trimming        
+][const_694_455                                        | SmartOpt Trimming        
+][const_695_456                                        | SmartOpt Trimming        
+][const_697_457                                        | SmartOpt Trimming        
+][const_698_458                                        | SmartOpt Trimming        
+][const_700_459                                        | SmartOpt Trimming        
+][const_701_460                                        | SmartOpt Trimming        
+][const_703_461                                        | SmartOpt Trimming        
+][const_704_462                                        | SmartOpt Trimming        
+][const_706_463                                        | SmartOpt Trimming        
+][const_707_464                                        | SmartOpt Trimming        
+][const_709_465                                        | SmartOpt Trimming        
+][const_70_114                                         | SmartOpt Trimming        
+][const_710_466                                        | SmartOpt Trimming        
+][const_712_467                                        | SmartOpt Trimming        
+][const_713_468                                        | SmartOpt Trimming        
+][const_715_469                                        | SmartOpt Trimming        
+][const_716_470                                        | SmartOpt Trimming        
+][const_718_471                                        | SmartOpt Trimming        
+][const_719_472                                        | SmartOpt Trimming        
+][const_721_473                                        | SmartOpt Trimming        
+][const_722_474                                        | SmartOpt Trimming        
+][const_724_475                                        | SmartOpt Trimming        
+][const_725_476                                        | SmartOpt Trimming        
+][const_727_477                                        | SmartOpt Trimming        
+][const_728_478                                        | SmartOpt Trimming        
+][const_72_115                                         | SmartOpt Trimming        
+][const_730_479                                        | SmartOpt Trimming        
+][const_731_480                                        | SmartOpt Trimming        
+][const_733_481                                        | SmartOpt Trimming        
+][const_734_482                                        | SmartOpt Trimming        
+][const_736_483                                        | SmartOpt Trimming        
+][const_737_484                                        | SmartOpt Trimming        
+][const_739_485                                        | SmartOpt Trimming        
+][const_740_486                                        | SmartOpt Trimming        
+][const_742_487                                        | SmartOpt Trimming        
+][const_743_488                                        | SmartOpt Trimming        
+][const_745_489                                        | SmartOpt Trimming        
+][const_746_490                                        | SmartOpt Trimming        
+][const_748_491                                        | SmartOpt Trimming        
+][const_749_492                                        | SmartOpt Trimming        
+][const_74_116                                         | SmartOpt Trimming        
+][const_751_493                                        | SmartOpt Trimming        
+][const_752_494                                        | SmartOpt Trimming        
+][const_754_495                                        | SmartOpt Trimming        
+][const_755_496                                        | SmartOpt Trimming        
+][const_757_497                                        | SmartOpt Trimming        
+][const_758_498                                        | SmartOpt Trimming        
+][const_760_499                                        | SmartOpt Trimming        
+][const_761_500                                        | SmartOpt Trimming        
+][const_763_501                                        | SmartOpt Trimming        
+][const_764_502                                        | SmartOpt Trimming        
+][const_766_503                                        | SmartOpt Trimming        
+][const_767_504                                        | SmartOpt Trimming        
+][const_769_505                                        | SmartOpt Trimming        
+][const_76_117                                         | SmartOpt Trimming        
+][const_770_506                                        | SmartOpt Trimming        
+][const_772_507                                        | SmartOpt Trimming        
+][const_773_508                                        | SmartOpt Trimming        
+][const_775_509                                        | SmartOpt Trimming        
+][const_776_510                                        | SmartOpt Trimming        
+][const_778_511                                        | SmartOpt Trimming        
+][const_779_512                                        | SmartOpt Trimming        
+][const_781_513                                        | SmartOpt Trimming        
+][const_782_514                                        | SmartOpt Trimming        
+][const_784_515                                        | SmartOpt Trimming        
+][const_785_516                                        | SmartOpt Trimming        
+][const_787_517                                        | SmartOpt Trimming        
+][const_788_518                                        | SmartOpt Trimming        
+][const_78_118                                         | SmartOpt Trimming        
+][const_790_519                                        | SmartOpt Trimming        
+][const_791_520                                        | SmartOpt Trimming        
+][const_793_521                                        | SmartOpt Trimming        
+][const_794_522                                        | SmartOpt Trimming        
+][const_796_523                                        | SmartOpt Trimming        
+][const_797_524                                        | SmartOpt Trimming        
+][const_799_525                                        | SmartOpt Trimming        
+][const_800_526                                        | SmartOpt Trimming        
+][const_802_527                                        | SmartOpt Trimming        
+][const_803_528                                        | SmartOpt Trimming        
+][const_805_529                                        | SmartOpt Trimming        
+][const_806_530                                        | SmartOpt Trimming        
+][const_808_532                                        | SmartOpt Trimming        
+][const_80_119                                         | SmartOpt Trimming        
+][const_82_120                                         | SmartOpt Trimming        
+][const_84_121                                         | SmartOpt Trimming        
+][const_86_122                                         | SmartOpt Trimming        
+][const_88_123                                         | SmartOpt Trimming        
+][const_8_83                                           | SmartOpt Trimming        
+][const_90_124                                         | SmartOpt Trimming        
+][const_92_125                                         | SmartOpt Trimming        
+][const_94_126                                         | SmartOpt Trimming        
+][const_96_127                                         | SmartOpt Trimming        
+][const_98_128                                         | SmartOpt Trimming        
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_232/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_233/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_234/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_235/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_236/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_237/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_238/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_239/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_240/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_241/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_242/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_243/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_244/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_245/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_246/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_247/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_247/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_248/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_248/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_249/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_249/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_250/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_250/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_251/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_251/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_252/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_252/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_253/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_253/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_254/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_254/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_255/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_255/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_256/gpc222_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_257/gpc222_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_258/gpc222_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL0_259/gpc222_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_114/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_115/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_116/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_117/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_118/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_119/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_120/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_121/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_122/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_123/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_124/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_125/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_126/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_127/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_127/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_128/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_128/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_129/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_129/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_130/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_130/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_131/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_131/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL1_132/gpc222_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_52/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_53/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_54/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_55/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_56/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_57/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_58/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_59/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_60/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_61/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_62/gpc123_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_63/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_63/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_64/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_64/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_65/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_65/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_66/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_66/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_67/gpc033_inst/LUT6_2| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL2_67/gpc033_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL3_0/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL3_1/gpc114_inst/LUT6_3| Trimming                 
+mult_comp_inst/mult_lut6_akak_inst/gpcL3_2/gpc123_inst/LUT6_3| Trimming                 
+
+
+   Flops added for Enable Generation                       
+-------------------------

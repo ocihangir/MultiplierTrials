@@ -63,7 +63,7 @@ Resource Sharing                   : YES
 Asynchronous To Synchronous        : NO
 Shift Register Minimum Size        : 2
 Use DSP Block                      : Auto
-Automatic Register Balancing       : Yes
+Automatic Register Balancing       : No
 
 ---- Target Options
 LUT Combining                      : Auto
@@ -72,18 +72,16 @@ Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 32
 Register Duplication               : YES
-Move First FlipFlop Stage          : YES
-Move Last FlipFlop Stage           : YES
 Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
 Use Synchronous Set                : Auto
 Use Synchronous Reset              : Auto
-Pack IO Registers into IOBs        : True
+Pack IO Registers into IOBs        : Auto
 Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
-Optimization Effort                : 2
+Optimization Effort                : 1
 Power Reduction                    : NO
 Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
@@ -1459,21 +1457,20 @@ Selected Device : 6vlx75tff784-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             337  out of  93120     0%  
+ Number of Slice Registers:             593  out of  93120     0%  
  Number of Slice LUTs:                 3847  out of  46560     8%  
     Number used as Logic:              3847  out of  46560     8%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4017
-   Number with an unused Flip Flop:    3680  out of   4017    91%  
-   Number with an unused LUT:           170  out of   4017     4%  
-   Number of fully used LUT-FF pairs:   167  out of   4017     4%  
+ Number of LUT Flip Flop pairs used:   4109
+   Number with an unused Flip Flop:    3516  out of   4109    85%  
+   Number with an unused LUT:           262  out of   4109     6%  
+   Number of fully used LUT-FF pairs:   331  out of   4109     8%  
    Number of unique control sets:         2
 
 IO Utilization: 
  Number of IOs:                         259
  Number of bonded IOBs:                 258  out of    360    71%  
-    IOB Flip Flops/Latches:             256
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -1601,12 +1598,12 @@ clk            |    4.851|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 19.11 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 25.81 secs
  
 --> 
 
-Total memory usage is 303732 kilobytes
+Total memory usage is 304116 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   74 (   0 filtered)

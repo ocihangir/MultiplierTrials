@@ -11,7 +11,7 @@ Target Device  : xc6vlx75t
 Target Package : ff784
 Target Speed   : -3
 Mapper Version : virtex6 -- $Revision: 1.55 $
-Mapped Date    : Sun Sep 06 16:36:49 2020
+Mapped Date    : Thu Sep 10 13:20:49 2020
 
 Design Summary
 --------------
@@ -23,24 +23,21 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      6,247 out of  46,560   13%
-    Number used as logic:                    6,245 out of  46,560   13%
-      Number using O6 output only:           6,188
+  Number of Slice LUTs:                      6,257 out of  46,560   13%
+    Number used as logic:                    6,257 out of  46,560   13%
+      Number using O6 output only:           6,218
       Number using O5 output only:               0
-      Number using O5 and O6:                   57
+      Number using O5 and O6:                   39
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  16,720    0%
-    Number used exclusively as route-thrus:      2
-      Number with same-slice register load:      2
-      Number with same-slice carry load:         0
-      Number with other load:                    0
+    Number used exclusively as route-thrus:      0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,762 out of  11,640   15%
+  Number of occupied Slices:                 1,682 out of  11,640   14%
   Number of LUT Flip Flop pairs used:        6,301
-    Number with an unused Flip Flop:         6,047 out of   6,301   95%
-    Number with an unused LUT:                  54 out of   6,301    1%
-    Number of fully used LUT-FF pairs:         200 out of   6,301    3%
+    Number with an unused Flip Flop:         6,046 out of   6,301   95%
+    Number with an unused LUT:                  44 out of   6,301    1%
+    Number of fully used LUT-FF pairs:         211 out of   6,301    3%
     Number of unique control sets:               1
     Number of slice register sites lost
       to control set restrictions:               0 out of  93,120    0%
@@ -83,11 +80,11 @@ Specific Feature Utilization:
   Number of SYSMONs:                             0 out of       1    0%
   Number of TEMAC_SINGLEs:                       0 out of       4    0%
 
-Average Fanout of Non-Clock Nets:                5.07
+Average Fanout of Non-Clock Nets:                5.06
 
-Peak Memory Usage:  665 MB
-Total REAL time to MAP completion:  3 mins 12 secs 
-Total CPU time to MAP completion:   3 mins 12 secs 
+Peak Memory Usage:  655 MB
+Total REAL time to MAP completion:  3 mins 23 secs 
+Total CPU time to MAP completion:   3 mins 22 secs 
 
 Table of Contents
 -----------------

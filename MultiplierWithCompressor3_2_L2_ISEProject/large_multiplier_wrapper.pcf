@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Sep 06 18:17:43 2020
+// Written by: Map P.20131013 on Thu Sep 10 14:31:23 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -217,6 +217,6 @@ TIMEGRP clk = BEL "in0_reg_0" BEL "in0_reg_1" BEL "in0_reg_2" BEL "in0_reg_3"
         "mult_comp_inst/pp0A_3" BEL "mult_comp_inst/pp0A_2" BEL
         "mult_comp_inst/pp0A_1" BEL "mult_comp_inst/pp0A_0" BEL
         "mult_comp_inst/st" BEL "clk_BUFGP/BUFG";
-TS_clk = PERIOD TIMEGRP "clk" 4.5 ns HIGH 50%;
+TS_clk = PERIOD TIMEGRP "clk" 5.9 ns HIGH 50%;
 SCHEMATIC END;
 

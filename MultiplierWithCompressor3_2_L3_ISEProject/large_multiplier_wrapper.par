@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-HP-BILGISAYAR::  Sun Sep 06 19:07:51 2020
+HP-BILGISAYAR::  Fri Sep 11 09:31:44 2020
 
 par -w -intstyle ise -ol high -mt off large_multiplier_wrapper_map.ncd
 large_multiplier_wrapper.ncd large_multiplier_wrapper.pcf 
@@ -27,24 +27,24 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      3,666 out of  46,560    7%
-    Number used as logic:                    3,650 out of  46,560    7%
-      Number using O6 output only:           3,470
+  Number of Slice LUTs:                      3,664 out of  46,560    7%
+    Number used as logic:                    3,656 out of  46,560    7%
+      Number using O6 output only:           3,482
       Number using O5 output only:               8
-      Number using O5 and O6:                  172
+      Number using O5 and O6:                  166
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  16,720    0%
-    Number used exclusively as route-thrus:     16
-      Number with same-slice register load:      8
+    Number used exclusively as route-thrus:      8
+      Number with same-slice register load:      0
       Number with same-slice carry load:         8
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,281 out of  11,640   11%
-  Number of LUT Flip Flop pairs used:        3,798
-    Number with an unused Flip Flop:         3,254 out of   3,798   85%
-    Number with an unused LUT:                 132 out of   3,798    3%
-    Number of fully used LUT-FF pairs:         412 out of   3,798   10%
+  Number of occupied Slices:                 1,279 out of  11,640   10%
+  Number of LUT Flip Flop pairs used:        3,828
+    Number with an unused Flip Flop:         3,275 out of   3,828   85%
+    Number with an unused LUT:                 164 out of   3,828    4%
+    Number of fully used LUT-FF pairs:         389 out of   3,828   10%
     Number of slice register sites lost
       to control set restrictions:               0 out of  93,120    0%
 
@@ -96,29 +96,29 @@ Finished initial Timing Analysis.  REAL time: 10 secs
 Starting Router
 
 
-Phase  1  : 22235 unrouted;      REAL time: 11 secs 
+Phase  1  : 22250 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 21709 unrouted;      REAL time: 12 secs 
+Phase  2  : 21730 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 1865 unrouted;      REAL time: 20 secs 
+Phase  3  : 1877 unrouted;      REAL time: 20 secs 
 
-Phase  4  : 1840 unrouted; (Setup:311, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
+Phase  4  : 1879 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 24 secs 
 
 Updating file: large_multiplier_wrapper.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:342, Hold:0, Component Switching Limit:0)     REAL time: 33 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
 
-Phase  6  : 0 unrouted; (Setup:342, Hold:0, Component Switching Limit:0)     REAL time: 33 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
 
-Phase  7  : 0 unrouted; (Setup:165, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
 
-Phase  8  : 0 unrouted; (Setup:165, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
 
-Phase  9  : 0 unrouted; (Setup:165, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
 
-Phase 10  : 0 unrouted; (Setup:132, Hold:0, Component Switching Limit:0)     REAL time: 45 secs 
-Total REAL time to Router completion: 45 secs 
-Total CPU time to Router completion: 48 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 29 secs 
+Total REAL time to Router completion: 29 secs 
+Total CPU time to Router completion: 30 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -136,7 +136,7 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|           clk_BUFGP | BUFGCTRL_X0Y0| No   |  144 |  0.143     |  1.502      |
+|           clk_BUFGP | BUFGCTRL_X0Y0| No   |  145 |  0.195     |  1.554      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -147,23 +147,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 132 (Setup: 132, Hold: 0, Component Switching Limit: 0)
-
-WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
-
-   Review the timing report using Timing Analyzer (In ISE select "Post-Place &
-   Route Static Timing Report"). Go to the failing constraint(s) and evaluate the failing paths for each constraint.
-
-   Try the Design Goal and Strategies for Timing Performance(In ISE select Project -> Design Goals & Strategies) to ensure the best options
-   are set in the tools for timing closure.
-
-   Use the Xilinx "SmartXplorer" script to try special combinations of
-   options known to produce very good results.
-
-   Visit the Xilinx technical support web at http://support.xilinx.com and go to
-   either "Troubleshoot->Tech Tips->Timing & Constraints" or "
-   TechXclusives->Timing Closure" for tips and suggestions for meeting timing
-   in your design.
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -172,29 +156,29 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_clk = PERIOD TIMEGRP "clk" 4.7 ns HIGH | SETUP       |    -0.067ns|     4.767ns|       4|         132
-   50%                                      | HOLD        |     0.109ns|            |       0|           0
+  TS_clk = PERIOD TIMEGRP "clk" 5.2 ns HIGH | SETUP       |     0.041ns|     5.159ns|       0|           0
+   50%                                      | HOLD        |     0.137ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
-1 constraint not met.
+All constraints were met.
 
 
 Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 48 secs 
-Total CPU time to PAR completion: 51 secs 
+Total REAL time to PAR completion: 32 secs 
+Total CPU time to PAR completion: 33 secs 
 
-Peak Memory Usage:  603 MB
+Peak Memory Usage:  557 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 4 errors found.
+Timing: Completed - No errors found.
 
 Number of error messages: 0
-Number of warning messages: 1
+Number of warning messages: 0
 Number of info messages: 0
 
 Writing design to file large_multiplier_wrapper.ncd

@@ -4,65 +4,57 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="6">
-<DesignStatistics TimeStamp="Mon Sep 07 00:35:14 2020"><group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="6">
+<DeviceUsageSummary rev="14">
+<DesignStatistics TimeStamp="Mon Sep 14 00:51:56 2020"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="14">
 <attrib name="value" value="258"/></item>
-<item name="AGG_IO" rev="6">
+<item name="AGG_IO" rev="14">
 <attrib name="value" value="258"/></item>
-<item name="AGG_SLICE" rev="6">
-<attrib name="value" value="1226"/></item>
-<item name="NUM_BONDED_IOB" rev="6">
+<item name="AGG_SLICE" rev="14">
+<attrib name="value" value="1187"/></item>
+<item name="NUM_BONDED_IOB" rev="14">
 <attrib name="value" value="258"/></item>
-<item name="NUM_BSFULL" rev="6">
-<attrib name="value" value="228"/></item>
-<item name="NUM_BSLUTONLY" rev="6">
-<attrib name="value" value="3395"/></item>
-<item name="NUM_BSREGONLY" rev="6">
-<attrib name="value" value="109"/></item>
-<item name="NUM_BSUSED" rev="6">
-<attrib name="value" value="3732"/></item>
-<item name="NUM_BUFG" rev="6">
+<item name="NUM_BSFULL" rev="14">
+<attrib name="value" value="507"/></item>
+<item name="NUM_BSLUTONLY" rev="14">
+<attrib name="value" value="3117"/></item>
+<item name="NUM_BSREGONLY" rev="14">
+<attrib name="value" value="82"/></item>
+<item name="NUM_BSUSED" rev="14">
+<attrib name="value" value="3706"/></item>
+<item name="NUM_BUFG" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="NUM_ILOGICE1" rev="6">
-<attrib name="value" value="128"/></item>
-<item name="NUM_IOB_FF" rev="6">
-<attrib name="value" value="256"/></item>
-<item name="NUM_LOGIC_O5ONLY" rev="6">
+<item name="NUM_LOGIC_O5ONLY" rev="14">
 <attrib name="value" value="24"/></item>
-<item name="NUM_LOGIC_O6ONLY" rev="6">
+<item name="NUM_LOGIC_O6ONLY" rev="14">
 <attrib name="value" value="3569"/></item>
-<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="6">
-<attrib name="value" value="29"/></item>
-<item name="NUM_LUT_RT_DRIVES_FLOP" rev="6">
+<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="14">
+<attrib name="value" value="30"/></item>
+<item name="NUM_LUT_RT_DRIVES_FLOP" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="NUM_LUT_RT_EXO6" rev="6">
-<attrib name="value" value="29"/></item>
-<item name="NUM_LUT_RT_O5" rev="6">
-<attrib name="value" value="2"/></item>
-<item name="NUM_LUT_RT_O5ANDO6" rev="6">
+<item name="NUM_LUT_RT_EXO5" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="NUM_LUT_RT_O6" rev="6">
+<item name="NUM_LUT_RT_EXO6" rev="14">
+<attrib name="value" value="30"/></item>
+<item name="NUM_LUT_RT_O5" rev="14">
+<attrib name="value" value="3"/></item>
+<item name="NUM_LUT_RT_O6" rev="14">
 <attrib name="value" value="24"/></item>
-<item name="NUM_OLOGICE1" rev="6">
-<attrib name="value" value="128"/></item>
-<item name="NUM_RPM" rev="6">
-<attrib name="value" value="893"/></item>
-<item name="NUM_SLICEL" rev="6">
-<attrib name="value" value="1226"/></item>
-<item name="NUM_SLICE_CARRY4" rev="6">
+<item name="NUM_SLICEL" rev="14">
+<attrib name="value" value="1187"/></item>
+<item name="NUM_SLICE_CARRY4" rev="14">
 <attrib name="value" value="32"/></item>
-<item name="NUM_SLICE_CONTROLSET" rev="6">
+<item name="NUM_SLICE_CONTROLSET" rev="14">
 <attrib name="value" value="2"/></item>
-<item name="NUM_SLICE_CYINIT" rev="6">
-<attrib name="value" value="3651"/></item>
-<item name="NUM_SLICE_FF" rev="6">
-<attrib name="value" value="337"/></item>
-<item name="NUM_SLICE_UNUSEDCTRL" rev="6">
-<attrib name="value" value="1134"/></item>
-<item name="NUM_STARTUP" rev="6">
+<item name="NUM_SLICE_CYINIT" rev="14">
+<attrib name="value" value="3652"/></item>
+<item name="NUM_SLICE_FF" rev="14">
+<attrib name="value" value="593"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="14">
+<attrib name="value" value="1022"/></item>
+<item name="NUM_STARTUP" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="NUM_UNUSABLE_FF_BELS" rev="6">
+<item name="NUM_UNUSABLE_FF_BELS" rev="14">
 <attrib name="value" value="7"/></item>
 </group>
 </DesignStatistics>
